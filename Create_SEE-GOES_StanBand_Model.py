@@ -33,7 +33,7 @@ f10_sb_file = "WAM_F10_Stan_Bands_2010-2020.dat"
 
 
 opath = "C:/Users/rodney.viereck/Documents/Python/EUV_2/stan_bands/"
-ofile = "GOES_StanBand_Coefficients.dat"
+ofile = "GOES_StanBand_Coefficients_2.dat"
 # Select Dates
 start_date = dt(2018,6,1)
 end_date = dt(2024,10,1)
@@ -244,7 +244,7 @@ for iband in range (num_bands):
 if write_file:
     print('Saving GOES Stan_Band coefficients to ', opath +ofile)
     results_df.set_index('inputs', inplace = True)
-    results_df[results_df < 1e-10] = 0
+    # results_df[results_df < 1e-10] = 0
     results_df.to_csv(opath +ofile, float_format='%.4e')
     
 

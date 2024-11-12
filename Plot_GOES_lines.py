@@ -24,6 +24,8 @@ ipath_goes = "C:/Users/rodney.viereck/Documents/Python/EUV_2/combined/"
 ifile = 'GOES_lines_2018-2024.dat'
 # ifile = "NRL_Spec.csv"
 
+
+
 scatter_plot = False
 # scatter_plot = True
 
